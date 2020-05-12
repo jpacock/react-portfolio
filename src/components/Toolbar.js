@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { GrFacebook, GrGithub, GrInstagram, GrLinkedin } from "react-icons/gr";
-import { FaInstagramSquare, FaRegBellSlash } from "react-icons/fa";
+import { GrGithub, GrInstagram, GrLinkedin } from "react-icons/gr";
 
 import { Link } from 'rebass';
 
@@ -13,7 +12,7 @@ const Toolbar = () => {
             <div className="profile-container">
                 <div className="profile">
                     <div className="profile-name">Jordan Acock</div>
-                    <div className="profile-job">IBM Software Consultant</div>
+                    <div className="profile-job">IBM Coud Lab Services</div>
                     <hr className="horizontal-rule" />
                     <div >
                         <Link href="https://www.linkedin.com/in/jordan-acock-8ba91152/"><GrLinkedin className="contact-icon" /></Link>

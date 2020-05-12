@@ -66,6 +66,10 @@
     font-weight: 800;
 }
 
+.profile-job {
+    padding: 5px 0px;
+}
+
 .horizontal-rule {
     margin:10px
 }
@@ -89,6 +93,7 @@
 .about-me-text {
     width: 100%;
     padding-bottom: 16px;
+    line-height:2em;
 }
 
 /*************** Skills **************/
@@ -97,6 +102,10 @@
     padding: 16px;
     min-height: 60vh;
     background-color: #f4f4f4;
+}
+
+.skill-type-container{
+    padding:20px;
 }
 
 .skill-rows-container {
@@ -150,12 +159,16 @@
 .project-timeline-item-date {
     display: flex;
     min-width: 100px;
-    align-items: center;
+    
     justify-content: center;
     padding:0px 10px;
     font-style:italic;
     color: gray;
     border-right: gray solid 1px;
+}
+
+.project-timeline-item-date {
+    padding-top:9px;
 }
 
 .project-timeline-item-diamond {
@@ -167,8 +180,10 @@
 }
 
 .project-timeline-item-details {
+    flex: 1;
     padding:10px 20px;
     /* width: 100%; */
+    /* border-bottom: gray solid 1px; */
 }
 
 .project-title {
@@ -182,19 +197,25 @@
 .project-skills-container {
     display:flex;
     align-items: center;
+    padding:10px 0px;
     border-bottom: solid black 1px;
 }
 
+.project-timeline-item:last-child .project-skills-container {
+    border-bottom: none
+}
+
 .project-skill-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   padding: 15px 10px;
   width:30px;
   height:30px;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
 .project-highlight {
-    padding: 5px 0px 0px 16px;
+    padding: 15px 0px 0px 16px;
 }
 
 @media (max-width: 640px) {

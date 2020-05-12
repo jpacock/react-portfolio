@@ -14,7 +14,8 @@ function ProjectHistory() {
                 <Heading
                     className="section-heading"
                     fontSize={[5, 6, 7]}
-                    color='primary'>
+                    color='primary'
+                    textAlign='center'>
                     Project History
                 </Heading>
             </div>

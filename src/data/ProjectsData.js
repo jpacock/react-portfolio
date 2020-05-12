@@ -1,6 +1,24 @@
 
 const ProjectsData = [
     {
+        title: "Family Recipes",
+        startDate: "04/2019",
+        endDate: "present",
+        customer: "",
+        description: "Multi-tier recipe application built using Nodejs, React, and Cloudant",
+        highlights: [
+            "Designed and implemented frontend using react and rebass",
+            "Implemented backend REST api to add and get receipes using nodejs and express middleware, storing the recipes in a cloudant datastore",
+            "Setup CI/CD on IBM Cloud with toolchain to automate build and deployment to cloud foundry"
+        ],
+        skills:[
+            "react",
+            "nodejs",
+            "express"
+        ],
+        link: "https://family-recipes.mybluemix.net/"
+    },
+    {
         title: "IBM Video Streaming Plugin",
         startDate: "06/2019",
         endDate: "12/2019",
@@ -15,7 +33,8 @@ const ProjectsData = [
             "content-navigator",
             "javascript",
             "java",
-        ]
+        ],
+        link: "https://blog.video.ibm.com/streaming-product-updates/ibm-watson-media-integration-for-filenet/"
     },
     {
         title: "Lockchain",

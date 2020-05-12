@@ -11,19 +11,16 @@ function AboutMe() {
                 color='primary'>
                 Hi, I'm a...
             </Heading>
-            
-                
+
+
             <Text
                 className="about-me-text"
-                fontSize={[2, 3, 4]}>
-                Delivery consultant disciplined in a wide range of Cloud products.
+                fontSize={[2, 3, 4]}
+                p="20px"
+                ls="10px">
+                Software delivery consultant disciplined in a wide range of cloud products,
+                providing implementation, mentoring, and support services to IBM clients
             </Text>
-            <Text
-                className="about-me-text"
-                fontSize={[2, 3, 4]}>
-                Providing implementation, mentoring, and support services to IBM clients
-            </Text>
-                
             
         </Box>
 
