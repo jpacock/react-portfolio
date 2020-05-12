@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+
+
+import Toolbar from './components/Toolbar';
+import AboutMe from './components/AboutMe';
+import ProjectHistory from './components/ProjectHistory';
+import Skills from './components/Skills';
 import './App.css';
+
+import { ThemeProvider } from 'emotion-theming'
+import theme from '@rebass/preset'
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="app">
+        <div className="side-container" >
+          <Toolbar />
+        </div>
+        <div className="main-container">
+          <AboutMe />
+          <Skills className="skills-container" />
+          <ProjectHistory className="skills-projects-container" />
+        </div>
+      </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*************** Global **************/
+.app {
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-heading {
+    padding: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+/*************** Toolbar **************/
+
+.side-container {
+    flex: 1;
+    /* background: #0f62fe; */
+    opacity: .7;
+    overflow: scroll;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:auto;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/profile-picture.png');
+    background-size: cover;
+    /* background-position-x: -120px; */
+    background-repeat: no-repeat;
+}
+.side-container-overlay {
+    background-color: white;
+    opacity: .7;
+    height:100%;
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container {
+    margin-left: 25%;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile {
+    width: 80%;
+    text-align: center;
+    color: black;
 }
+
+.profile-container {
+    display:flex;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile-name {
+    color: black;
+    font-weight: 800;
+}
+
+.horizontal-rule {
+    margin:10px
+}
+
+.contact-icon {
+    padding-right:10px;
+}
+
+
+
+/*************** About Me **************/
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.about-me-text {
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+/*************** Skills **************/
+.skills-container {
+    text-align: center;
+    padding: 16px;
+    min-height: 60vh;
+    background-color: #f4f4f4;
+}
+
+.skill-rows-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.skill-row {
+    display:flex;
+    width: 45%;
+    height: 60px;
+}
+
+.skill-indicator-container {
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skill-indicator-full {
+    margin: 0px 10px;
+    background: lightgray;
+    height: 30%;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    
+    .skill-row {
+        width: 90%
+    }
+
+}
+
+
+/*************** Projects **************/
+.project-timeline {
+    padding-bottom: 1px; 
+}
+
+.project-timeline-item {
+    margin: 0px 10px;
+    display: flex;
+}
+
+.project-timeline-item-date {
+    display: flex;
+    min-width: 100px;
+    align-items: center;
+    justify-content: center;
+    padding:0px 10px;
+    font-style:italic;
+    color: gray;
+    border-right: gray solid 1px;
+}
+
+.project-timeline-item-diamond {
+    position: absolute;
+    margin-left: -8px;
+    margin-top: 21px;
+    color: gray;
+
+}
+
+.project-timeline-item-details {
+    padding:10px 20px;
+    /* width: 100%; */
+}
+
+.project-title {
+    font-size: 30px;
+}
+
+.project-description {
+    font-style: italic;
+}
+
+.project-skills-container {
+    display:flex;
+    align-items: center;
+    border-bottom: solid black 1px;
+}
+
+.project-skill-logo {
+  padding: 15px 10px;
+  width:30px;
+  height:30px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.project-highlight {
+    padding: 5px 0px 0px 16px;
+}
+
+@media (max-width: 640px) {
+    
+    .project-timeline-item {
+        flex-direction: column;
+    }
+    
+    .project-timeline-item-diamond {
+        height:0;
+        width: 0;
+    }
+
+    .project-timeline-item-date {
+        
+        border-right: none;
+        display:flex;
+    }
+
+    .project-timeline-date {
+        display: flex;
+        width: 133px;
+        padding-top: 15px;
+        justify-content: space-between;
+
+    }
+}
+
+/*************** queries **************/
+@media (max-width: 1000px) {
+    
+    .app {
+        flex-direction: column;
+    }
+
+    .side-container {
+        height: 20vh;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        position: relative;
+        width: auto;
+        padding-bottom: 0;
+        background-size: 100% auto;
+        position: relative;
+    }
+
+    .main-container {
+        
+        margin-left: 0; 
+        
+    }
+    
+
+    .profile {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+
+    .about-me-container {
+       height:80vh
+    }
+
+}
+
