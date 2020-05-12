@@ -4,7 +4,7 @@ import { BsFillDiamondFill } from "react-icons/bs";
 
 import SkillsData from '../data/SkillsData';
 
-import { Box, Link } from 'rebass';
+import { Box, Heading, Link } from 'rebass';
 
 function project(props) {
     const skills = SkillsData;
@@ -18,9 +18,11 @@ function project(props) {
             </div>
             <div className="project-timeline-item-line"><BsFillDiamondFill className="project-timeline-item-diamond" /></div>
             <div className="project-timeline-item-details">
-                <div style={{display: "flex"}}>
-                    <div className="project-title">{props.project.title} {props.project.link ? <Link fontSize={[1,2,3]} p={2} variant='nav' href={props.project.link}>(link)</Link> : null} </div>
-                </div>
+                
+                    <Heading fontSize={[4, 4, 5]}>{props.project.title}
+                        {props.project.link ? <Link fontSize={[1, 2, 3]} p={2} variant='nav' href={props.project.link}>(link)</Link> : null}
+                    </Heading>
+                
                 <div className="project-description">{props.project.customer}</div>
                 <div>{props.project.description}</div>
 
