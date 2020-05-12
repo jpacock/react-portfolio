@@ -209,9 +209,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  padding: 15px 10px;
-  width:30px;
-  height:30px;
+    padding: 15px 10px;
+    width:30px;
+    height:30px;
+    /* gray scale color images */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .project-highlight {
